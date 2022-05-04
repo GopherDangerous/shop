@@ -1,0 +1,274 @@
+body {
+    font-family: 'Lato';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__catalog {
+    margin-top: 51px;
+    display: flex;
+}
+
+.head__catalog {
+    display: flex;
+
+}
+
+.fil {
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.fil2 {
+    margin-left: 10px;
+}
+
+.fil__h {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    padding-left: 16px;
+    margin-top: 10px;
+}
+
+.filter {
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 16px;
+
+}
+
+.menu__filter {
+    display: block;
+    padding-left: 16px;
+    list-style-type: none;
+    display: flex;
+}
+
+.filter:hover {
+    color: $site-color;
+}
+
+.summary::-webkit-details-marker {
+    display: none;
+}
+
+.filter1 {
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 360px;
+    margin-top: -27px;
+    box-shadow: -5px 10px 15px -5px #424250;
+    z-index: 20;
+}
+
+.filter1:before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    position: absolute;
+}
+
+.sub__filter:hover .filter1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+}
+
+.accordion {
+    width: 360px;
+    background: #fff;
+}
+
+.accordion__item {
+    background: #fff;
+}
+
+.accordion__title {
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    border-bottom: 1px solid #EBEBEB;
+    padding-top: 24px;
+    padding-left: 33px;
+    padding-bottom: 12px;
+}
+
+.accordion__title:hover {
+    color: $site-color;
+}
+
+.accordion__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter__product {
+    text-decoration: none;
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 12px;
+    padding-left: 33px;
+}
+
+.filter__product:hover {
+    color: $site-color;
+}
+
+.trending {
+    width: 350px;
+    margin-left: 255px;
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.prise:hover {
+    color: $site-color;
+}
+
+.prise {
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 28px;
+    display: flex;
+    text-decoration: none;
+}
+
+.prise__p:hover {
+    color: $site-color;
+}
+
+.prise__p {
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 28px;
+    display: flex;
+    text-decoration: none;
+
+}
+
+.ugol {
+    font-size: 25px;
+    transform: rotate(-90deg);
+    margin-left: 10px;
+}
+
+.size {
+    display: flex;
+    list-style-type: none;
+}
+
+.prise__size {
+    width: 80px;
+    height: 103px;
+    background: #fff;
+    box-shadow: -5px 10px 15px -5px #424250;
+    position: absolute;
+    display: none;
+}
+
+.sub__prise:hover .prise__size {
+    display: flex;
+    flex-direction: column;
+}
+
+.prise__in {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+.input[type=checkbox]+label {
+    display: block;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.input[type=checkbox] {
+    display: none;
+}
+
+.input[type=checkbox]+label:before {
+    content: "\2714";
+    border: 1px solid #EBEBEB;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    margin-right: 2px;
+    vertical-align: bottom;
+    color: transparent;
+}
+
+.input[type=checkbox]:checked+label:before {
+    background-color: $site-color;
+    border-color: #EBEBEB;
+    color: #000;
+}
+
+
+.item__catalog {
+    /* margin-top: 300px;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
+.pagination {
+    border: 1px solid #d0d0d0;
+    max-width: 283px;
+    height: 43px;
+    width: 100%;
+    margin: 28px auto;
+    position: relative;
+}
+
+.pagi {
+    width: 100%;
+    display: flex;
+    margin-top: 11px;
+    list-style-type: none;
+}
+
+
+.fragment {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #d0d0d0;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.fragment:hover {
+    color: $site-color;
+}
